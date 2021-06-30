@@ -8,7 +8,7 @@ Weather Dashboard Project
 
     My motivation for tackling the project was to learn how to use 3rd party api and fetch request in my Javascript code.
 
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.") 
 
     I built the project to further develop my javascript skills using APIs, fetch and localStorage. 
 
