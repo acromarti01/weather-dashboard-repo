@@ -1,14 +1,17 @@
 const apiKey = "fcd4959547494e3926eb7576b9b31d6a";
 const searchBtnEl = document.getElementById("search-btn");
+let cityArray = [];
 
-searchBtnEl.addEventListener("click", function() {
+populateHistoryUsingLocalStorage();
+
+searchBtnEl.addEventListener("click", function () {
     const city = document.querySelector("input").value;
-    if (city !== "") 
-    {
+    if (city !== "") {
+        cityArray.push(city);
         displayWeatherInfo(city);
         populateSearchHistory(city);
         document.querySelector("input").value = "";
-    }       
+    }
 });
 
 function displayWeatherInfo(city) {
@@ -30,42 +33,29 @@ function displayWeatherInfo(city) {
             fetch(url2)
                 .then(function (response) { return response.json(); })
                 .then(function (data) {
-                    for (let i = 0; i < cityDateEls.length; i++) 
-                    {
+                    for (let i = 0; i < cityDateEls.length; i++) {
                         dataIcon = data.daily[i].weather[0].icon;
                         iconUrl = `http://openweathermap.org/img/wn/${dataIcon}.png`;
                         const dateStr = new Date(data.daily[i].dt * 1000).toLocaleString();
-                        //const currentDate = dateObject.toLocaleString();
                         const dateArray = dateStr.split(",");
-                        if (i === 0)
-                        {
+                        if (i === 0) {
                             cityDateEls[i].textContent = `${city} ${dateArray[0]}`;
                         }
-                        else
-                        {
+                        else {
                             cityDateEls[i].textContent = dateArray[0];
-                        }                        
+                        }
                         cityWeatherIconEls[i].setAttribute("src", iconUrl);
                         cityTempEls[i].textContent = `Temp: ${data.daily[i].temp.day} `;
                         cityWindSpeedEls[i].textContent = `Wind: ${data.daily[i].wind_speed} MPH`;
                         cityHumidityEls[i].textContent = `Humidity: ${data.daily[i].humidity} %`;
-                        if (i === 0) 
-                        { 
+                        if (i === 0) {
                             cityUvIndexEl.textContent = `UV Index: ${data.daily[i].uvi}`;
-                            uvIndexColor(data.daily[i].uvi) 
+                            uvIndexColor(data.daily[i].uvi)
                         }
-                    }                     
+                    }
                 });
 
         });
-}
-
-function convertDateUsingMoment(date)
-{
-     const dateAndTimeArray = date.split(" ");
-     const currentDate = dateAndTimeArray[0];
-     const momentOne = moment(currentDate).format("l");
-     return momentOne;
 }
 
 function populateSearchHistory(city) {
@@ -89,35 +79,44 @@ function populateSearchHistory(city) {
     btnEl.addEventListener("click", function () {
         displayWeatherInfo(city);
     });
+    localStorage.setItem("cities", JSON.stringify(cityArray));
 }
 
-function uvIndexColor(uvIndex)
+
+function populateHistoryUsingLocalStorage()
 {
+    const cityArray = JSON.parse(localStorage.getItem("cities"));
+    if (cityArray !== null)
+    {
+        for (let i = 0; i < cityArray.length; i++)
+        {
+            populateSearchHistory(cityArray[i]);
+        }
+    }    
+}
+
+
+function uvIndexColor(uvIndex) {
     const cityUvIndexEl = document.getElementById("city-uvIndex");
-    if (uvIndex >= 0 && uvIndex < 3) 
-    { 
+    if (uvIndex >= 0 && uvIndex < 3) {
         cityUvIndexEl.style.backgroundColor = "green";
-        cityUvIndexEl.style.color = "white"; 
+        cityUvIndexEl.style.color = "white";
     }
-    else if (uvIndex >= 3 && uvIndex < 6) 
-    { 
-        cityUvIndexEl.style.backgroundColor = "yellow"; 
-        cityUvIndexEl.style.color = "black"; 
+    else if (uvIndex >= 3 && uvIndex < 6) {
+        cityUvIndexEl.style.backgroundColor = "yellow";
+        cityUvIndexEl.style.color = "black";
     }
-    else if (uvIndex >= 6 && uvIndex < 8) 
-    { 
-        cityUvIndexEl.style.backgroundColor = "orange"; 
-        cityUvIndexEl.style.color = "white"; 
+    else if (uvIndex >= 6 && uvIndex < 8) {
+        cityUvIndexEl.style.backgroundColor = "orange";
+        cityUvIndexEl.style.color = "white";
     }
-    else if (uvIndex >= 8 && uvIndex < 11) 
-    { 
+    else if (uvIndex >= 8 && uvIndex < 11) {
         cityUvIndexEl.style.backgroundColor = "red";
-        cityUvIndexEl.style.color = "white";  
+        cityUvIndexEl.style.color = "white";
     }
-    else 
-    { 
-        cityUvIndexEl.style.backgroundColor = "violet"; 
-        cityUvIndexEl.style.color = "white"; 
+    else {
+        cityUvIndexEl.style.backgroundColor = "violet";
+        cityUvIndexEl.style.color = "white";
     }
 }
 
