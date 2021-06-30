@@ -12,7 +12,7 @@ Weather Dashboard Project
 
     I built the project to further develop my javascript skills using APIs, fetch and localStorage. 
 
-- What problem does it solve?
+- What problem does it solve? 
 
     Learning about 3rd party APIs and fetch request helps with requesting data users might want from websites.
 
