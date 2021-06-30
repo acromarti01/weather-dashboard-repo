@@ -1,6 +1,6 @@
 # weather-dashboard-repo
 
-Weather Dashboard Project
+Weather Dashboard Project 
 
 ## Description
 
