@@ -1,0 +1,75 @@
+.main-card
+{
+    width: 100%;
+}
+.main-body
+{
+    display: flex;
+}
+.card1
+{
+    width: 25%;
+    border: solid white;
+}
+.card1 div
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.card1 input
+{
+    margin-bottom: 10px;
+}
+.card2
+{
+    width: 75%;
+    border: solid white;
+}
+.card2 div:nth-child(1)
+{
+    margin-bottom: 10px;
+}
+.current-weather
+{
+    border: 1px solid black;
+}
+#search-btn
+{
+    width: 100%;
+}
+ul
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+ul li
+{
+    margin-bottom: 10px;
+}
+.forecast-container div ul li:nth-child(1)
+{
+    margin-bottom: -5px;
+}
+.forecast-container div ul li:nth-child(2) 
+{
+    margin-bottom: -10px;
+}
+#curr-temp::after, .city-temp::after { content: "\2109"; }
+
+.forecast-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.forecast-container div
+{
+    background-color: #13293d;
+    color: white;
+    padding: 10px;
+}
+p
+{
+    width: 130px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="flex">
+        <div class="card main-card">
+            <div class="card-header text-center">
+                Weather Dashboard
+            </div>
+            <div class="card-body main-body">
+                <aside class="card card1">
+                    <div>
+                        <h4>Search for a City:</h4>
+                        <input type="text">
+                        <button class="btn btn-primary" id="search-btn">Search</button>
+                    </div>
+                    <div id="search-history"></div>
+                </aside>
+                <section class="card card2">
+                    <div class="current-weather" id="current-weather">
+                        <h4></h4>
+                        <div class="">
+                            <ul>
+                                <li class="city-date"></li> 
+                                <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                   
+                                <li class="city-temp"></li>
+                                <li class="city-wind-speed"></li>
+                                <li class="city-humidity"></li>
+                                <li><p id="city-uvIndex"></p></li>
+                            </ul>
+                        </div>                    
+                    </div>
+                    <div class="five-day-forecast">
+                        <h6>5-Day Forecast:</h6>
+                        <div class="forecast-container">
+                            <div>
+                                <ul>
+                                    <li class="city-date"></li> 
+                                    <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                   
+                                    <li class="city-temp"></li>
+                                    <li class="city-wind-speed"></li>
+                                    <li class="city-humidity"></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="city-date"></li>
+                                    <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                      
+                                    <li class="city-temp"></li>
+                                    <li class="city-wind-speed"></li>
+                                    <li class="city-humidity"></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="city-date"></li>
+                                    <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                    
+                                    <li class="city-temp"></li>
+                                    <li class="city-wind-speed"></li>
+                                    <li class="city-humidity"></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="city-date"></li> 
+                                    <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                    
+                                    <li class="city-temp"></li>
+                                    <li class="city-wind-speed"></li>
+                                    <li class="city-humidity"></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="city-date"></li>  
+                                    <li><img class="city-weather-icon" src="" alt="weather icon"></li>                                   
+                                    <li class="city-temp"></li>
+                                    <li class="city-wind-speed"></li>
+                                    <li class="city-humidity"></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                                            
+                    </div>
+                                    
+                </section>
+
+            </div>
+        </div>
+        
+        
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
