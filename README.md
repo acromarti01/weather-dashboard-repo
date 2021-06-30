@@ -16,7 +16,7 @@ Weather Dashboard Project
 
     Learning about 3rd party APIs and fetch request helps with requesting data users might want from websites.
 
-- What did you learn?
+- What did you learn? 
 
     I learned different types of APIs and fetch functions.
 
