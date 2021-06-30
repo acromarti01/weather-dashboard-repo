@@ -4,7 +4,7 @@ Weather Dashboard Project
 
 ## Description
 
-- What was your motivation?
+- What was your motivation? 
 
     My motivation for tackling the project was to learn how to use 3rd party api and fetch request in my Javascript code.
 
