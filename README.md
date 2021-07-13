@@ -1,28 +1,46 @@
-# weather-dashboard-repo 
-
-Weather Dashboard Project 
+# Weather Dashboard
 
 ## Description
 
-- What was your motivation? 
+Design dashboard that display weather data for six days from a selected location
 
-    My motivation for tackling the project was to learn how to use 3rd party api and fetch request in my Javascript code.
+## List Of Technologies
 
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.") 
-
-    I built the project to further develop my javascript skills using APIs, fetch and localStorage. 
-
-- What problem does it solve? 
-
-    Learning about 3rd party APIs and fetch request helps with requesting data users might want from websites.
-
-- What did you learn? 
-
-    I learned different types of APIs and fetch functions.
+<ul>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>JSON</li>
+    <li>OpenWeatherMap API</li>
+</ul>
 
 ## ScreenShot
 
-![Image](./assets/images/screenshot.png)
+![gif](./assets/images/homework-video.gif)
+
+## License
+
+MIT License
+
+Copyright (c) 2021 GitHub Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Link to Deployed Website
 
