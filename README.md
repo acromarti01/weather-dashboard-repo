@@ -37,6 +37,7 @@ To run the application open index.js in a broswer
 ## ScreenShot
 
 ![gif](./assets/images/homework-video.gif)
+![Image](./assets/images/screenshot2.png)
 
 ## License
 
