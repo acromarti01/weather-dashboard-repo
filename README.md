@@ -42,6 +42,10 @@ To run the application open index.js in a broswer
 
 Licensed under the <a href="./LICENSE.txt">MIT License</a>
 
+## Contributing
+
+This project follows the Fork and Pull Git workflow guidlines
+
 
 ## Link to Deployed Website
 
