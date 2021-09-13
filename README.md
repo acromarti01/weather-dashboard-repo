@@ -6,7 +6,17 @@
 
 Design dashboard that display weather data for six days from a selected location. User can store and vist previous locations that were displayed. 
 
-## List Of Technologies
+## Table of Contents
+
+- [Technologies](#Technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Technologies
 
 <ul>
     <li>HTML5</li>
@@ -15,6 +25,7 @@ Design dashboard that display weather data for six days from a selected location
     <li>JSON</li>
     <li>OpenWeatherMap API</li>
 </ul>
+
 
 ## ScreenShot
 
