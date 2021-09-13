@@ -1,8 +1,10 @@
 # Weather Dashboard
 
+![badges](https://img.shields.io/badge/license-MIT_License-brightgreen)
+
 ## Description
 
-Design dashboard that display weather data for six days from a selected location
+Design dashboard that display weather data for six days from a selected location. User can store and vist previous locations that were displayed. 
 
 ## List Of Technologies
 
