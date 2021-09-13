@@ -50,6 +50,12 @@ This project follows the Fork and Pull Git workflow guidlines
 
 There are no test instructions
 
+## Questions
+
+GitHub Profile: <a href="https://github.com/acromarti01">https://github.com/acromarti01</a>
+
+Any additional question you can reach me at <u>acromarti@gmail.com</u>
+
 ## Link to Deployed Website
 
 https://acromarti01.github.io/weather-dashboard-repo/
