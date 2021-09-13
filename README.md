@@ -26,6 +26,10 @@ Design dashboard that display weather data for six days from a selected location
     <li>OpenWeatherMap API</li>
 </ul>
 
+## Installation
+
+There is nothing to install
+
 
 ## ScreenShot
 
