@@ -46,6 +46,9 @@ Licensed under the <a href="./LICENSE.txt">MIT License</a>
 
 This project follows the Fork and Pull Git workflow guidlines
 
+## Tests
+
+There are no test instructions
 
 ## Link to Deployed Website
 
